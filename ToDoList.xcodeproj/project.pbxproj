@@ -11,6 +11,10 @@
 		0A2F48DF2B4CC246002CAC96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F48DE2B4CC246002CAC96 /* Assets.xcassets */; };
 		0A2F48E22B4CC246002CAC96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F48E12B4CC246002CAC96 /* Preview Assets.xcassets */; };
 		0A2F48EA2B4CCA9A002CAC96 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2F48E92B4CCA9A002CAC96 /* ListView.swift */; };
+		0A2F48EC2B4CD47A002CAC96 /* ViewListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2F48EB2B4CD47A002CAC96 /* ViewListRow.swift */; };
+		0A2F48EE2B4CD88E002CAC96 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2F48ED2B4CD88E002CAC96 /* AddItemView.swift */; };
+		0A2F48F22B4CE3E4002CAC96 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2F48F12B4CE3E4002CAC96 /* Item.swift */; };
+		0A54D84E2B4E0671000EA687 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54D84D2B4E0671000EA687 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0A2F48DE2B4CC246002CAC96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A2F48E12B4CC246002CAC96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0A2F48E92B4CCA9A002CAC96 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		0A2F48EB2B4CD47A002CAC96 /* ViewListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewListRow.swift; sourceTree = "<group>"; };
+		0A2F48ED2B4CD88E002CAC96 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		0A2F48F12B4CE3E4002CAC96 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0A54D84D2B4E0671000EA687 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				0A2F48DA2B4CC245002CAC96 /* ToDoListApp.swift */,
+				0A2F48F02B4CE3C3002CAC96 /* Models */,
+				0A54D84A2B4E060A000EA687 /* ViewModel */,
 				0A2F48E82B4CCA73002CAC96 /* Views */,
 				0A2F48DE2B4CC246002CAC96 /* Assets.xcassets */,
 				0A2F48E02B4CC246002CAC96 /* Preview Content */,
@@ -71,8 +81,26 @@
 			isa = PBXGroup;
 			children = (
 				0A2F48E92B4CCA9A002CAC96 /* ListView.swift */,
+				0A2F48EB2B4CD47A002CAC96 /* ViewListRow.swift */,
+				0A2F48ED2B4CD88E002CAC96 /* AddItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0A2F48F02B4CE3C3002CAC96 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A2F48F12B4CE3E4002CAC96 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A54D84A2B4E060A000EA687 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A54D84D2B4E0671000EA687 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2F48F22B4CE3E4002CAC96 /* Item.swift in Sources */,
+				0A2F48EC2B4CD47A002CAC96 /* ViewListRow.swift in Sources */,
 				0A2F48DB2B4CC245002CAC96 /* ToDoListApp.swift in Sources */,
 				0A2F48EA2B4CCA9A002CAC96 /* ListView.swift in Sources */,
+				0A54D84E2B4E0671000EA687 /* ViewModel.swift in Sources */,
+				0A2F48EE2B4CD88E002CAC96 /* AddItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +314,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,6 +343,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
